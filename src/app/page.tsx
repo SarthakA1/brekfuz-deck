@@ -16,14 +16,19 @@ export default function Home() {
   return (
     <main className="relative h-screen w-screen bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 text-white overflow-hidden flex items-center justify-center">
       {isMobile ? (
-        // Mobile / small screens: just download button
-        <a
-          href={PDF_FILE}
-          download
-          className="px-6 py-4 rounded-2xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold shadow-lg hover:scale-105 transform transition"
-        >
-          Download Pitch Here. 
-        </a>
+        // Mobile / small screens: text + download button in glassmorphic box
+        <div className="flex flex-col items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-6 py-8 shadow-lg text-center">
+          <h1 className="text-lg font-semibold text-white">
+            Brekfuz: The Modern Workbook for Modern Revision.
+          </h1>
+          <a
+            href={PDF_FILE}
+            download
+            className="px-6 py-4 rounded-2xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold shadow-lg hover:scale-105 transform transition"
+          >
+            Download Pitch Here
+          </a>
+        </div>
       ) : (
         // Desktop / large screens: fullscreen PDF
         <>
