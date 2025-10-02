@@ -22,7 +22,7 @@ export default function Home() {
           download
           className="px-6 py-4 rounded-2xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-semibold shadow-lg hover:scale-105 transform transition"
         >
-          Brekfuz: The Modern Workbook for Modern Revision. Download Pitch Here. 
+          Download Pitch Here. 
         </a>
       ) : (
         // Desktop / large screens: fullscreen PDF
